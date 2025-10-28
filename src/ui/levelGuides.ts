@@ -55,6 +55,9 @@ export function getLevelGuide(levelId: number): LevelGuideSpec {
           'EN: Use stones to craft weapons and defeat monsters.',
           'CN: 使用石头制作武器，用来打倒怪物。',
           '',
+          'EN: Monsters appear every 3 turns and move counterclockwise around the map.',
+          'CN: 怪物每 3 回合生成一次，并会沿逆时针方向在地图上移动。',
+          '',
           'EN: Each weapon can defeat one monster and grants +1 point.',
           'CN: 每次打倒怪物会消耗一件武器，并获得 1 分。',
           '',
@@ -63,13 +66,11 @@ export function getLevelGuide(levelId: number): LevelGuideSpec {
         ],
       };
 
+
     case 4:
       return {
-        title: 'Level 4 — Moving Enemies & Catapults / 第四关：移动的敌人与投石台',
+        title: 'Level 4 — Catapults & Defense / 第四关：投石台与防御',
         lines: [
-          'EN: Monsters now move counterclockwise each turn instead of staying still.',
-          'CN: 怪物不再停留在原地，而是会以逆时针方向移动。',
-          '',
           'EN: If a monster steps onto a house, the house will be destroyed.',
           'CN: 当怪物进入房子所在的地块时，房子会被破坏。',
           '',
@@ -83,6 +84,7 @@ export function getLevelGuide(levelId: number): LevelGuideSpec {
           'CN: 善用这一力量，巧妙防守，尝试顺利通关！',
         ],
       };
+
 
     default:
       return DEFAULT_GUIDE;

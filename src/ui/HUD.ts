@@ -290,7 +290,7 @@ export class HUD {
 
   /** 右侧配方卡片 */
   private receiptCard!: Phaser.GameObjects.Container;
-  private receiptWidth = 240;
+  private receiptWidth = 270;
 
   /** 顶部 Guide 小按钮 */
   private guideBtn!: InlineButton;
@@ -454,7 +454,7 @@ export class HUD {
   private createReceiptCardFiltered() {
     const card = this.scene.add.container(0, 0).setScrollFactor(0);
 
-    const pad = 10;
+    const pad = 6;
     const titleH = 22;
     const lineH = 20;
 
@@ -544,7 +544,7 @@ export class HUD {
     }
 
     // 右侧配方卡片定位：右侧、在顶部栏下面
-    const cardX = width - this.margin - this.receiptWidth;
+    const cardX = width - this.margin - this.receiptWidth + 10;
     const cardY = this.headerHeight + this.margin;
     this.receiptCard.setPosition(cardX, cardY);
   }

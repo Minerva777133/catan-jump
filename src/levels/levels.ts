@@ -30,7 +30,7 @@ export const LEVELS: LevelSpec[] = [
     overrides: {
       MAP_RADIUS: 2,
       SCORE_TO_WIN: 3,
-      TURN_LIMIT: 20,
+      TURN_LIMIT: 12,
       RESOURCE_WEIGHTS: {
         BRICK: 0,
         WHEAT: 0,
