@@ -17,7 +17,7 @@ temp/
 .vite/
 vite.cache/
 
-# Electron / bundlers
+# Electron
 *.asar
 *.map
 

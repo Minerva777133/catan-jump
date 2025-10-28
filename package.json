@@ -6,9 +6,9 @@
   "main": "electron/main.js",
   "scripts": {
     "dev": "vite",
-    "build:web": "vite build",
+    "build:web": "cross-env BUILD_TARGET=web vite build && node scripts/postbuild.cjs",
     "preview": "vite preview --host",
-    "build:electron": "vite build --base=./",
+    "build:electron": "cross-env BUILD_TARGET=electron vite build --base=./",
     "start:electron": "npm run build:electron && electron .",
     "dist": "npm run build:electron && electron-builder"
   },
@@ -17,6 +17,7 @@
   },
   "devDependencies": {
     "concurrently": "^9.2.1",
+    "cross-env": "^7.0.3",
     "electron": "^38.4.0",
     "electron-builder": "^26.0.12",
     "typescript": "^5.4.0",
